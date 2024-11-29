@@ -2,12 +2,16 @@ package fizzbuzz;
 
 public class fizzBuzz {
 	String fizzbuzz(int i) {
+		String returnValue = new String();
 		if (i % 3 == 0) {
-			return "fizz";
+			returnValue += "fizz";
 		}
 		if (i % 5 == 0) {
-			return "buzz";
+			returnValue += "buzz";
 		}
-		return "" + i;
+		if (returnValue.equals("")) {
+			returnValue += i;
+		}
+		return returnValue;
 	}
 }

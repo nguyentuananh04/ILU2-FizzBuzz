@@ -2,6 +2,6 @@ package fizzbuzz;
 
 public class fizzBuzz {
 	String fizzbuzz(int i) {
-		return "1";
+		return Integer.toString(i);
 	}
 }

@@ -47,4 +47,14 @@ class fizzBuzzTest {
 	void fizzQuinze( ) {
 		assertEquals(fizzBuzz.fizzbuzz(15), "fizzbuzz");
 	}
+	
+	@Test
+	void othersValues( ) {
+		assertEquals(fizzBuzz.fizzbuzz(7), "7");
+		assertEquals(fizzBuzz.fizzbuzz(45), "fizzbuzz");
+		assertEquals(fizzBuzz.fizzbuzz(2 * 3), "fizz");
+		assertEquals(fizzBuzz.fizzbuzz(2 * 3 * 5), "fizzbuzz");
+		assertEquals(fizzBuzz.fizzbuzz(3 * 3 * 5 * 5), "fizzbuzz");
+		assertEquals(fizzBuzz.fizzbuzz(400), "buzz");
+	}
 }
